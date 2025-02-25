@@ -1,0 +1,3 @@
+[submodule "scanpy_scripts"]
+	path = scanpy_scripts
+	url = git@github.com:parithera/scanpy_scripts.git
