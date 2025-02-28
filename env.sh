@@ -1,0 +1,1 @@
+export HDF5_PLUGIN_PATH=.venv/lib/python3.13/site-packages/hdf5plugin/plugins

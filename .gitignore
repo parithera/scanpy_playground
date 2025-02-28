@@ -1,0 +1,6 @@
+.venv
+*.json
+*.png
+out.h5ad
+!groups.json
+!.vscode
