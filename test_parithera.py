@@ -36,7 +36,7 @@ class TestParithera(unittest.TestCase):
         marker = Markers(TestParithera.output_path)
         expected_genes = ["IFITM3", "A2M", "IGFBP7", "HSPG2", "IFI27"]
         output = marker.run()
-        self.assertEqual(output["cluster_genes"], expected_genes, f"Expected genes {expected_genes}, but got {marker.run()['cluster_genes']}")
+        self.assertEqual(output["cells"]["cluster_genes"], expected_genes, f"Expected genes {expected_genes}, but got {marker.run()['cluster_genes']}")
 
 if __name__ == '__main__':
     unittest.main()
