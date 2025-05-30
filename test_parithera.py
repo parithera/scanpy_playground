@@ -12,6 +12,7 @@ class TestParithera(unittest.TestCase):
 
     def test_link_to_project(self):
         link_to_project = LinkToProject(TestParithera.output_path)
+        link_to_project.run()
         import os
         file_size_mb = os.path.getsize(link_to_project.output_path.replace("python", "out.h5ad")) / (1024 * 1024)
         self.assertGreater(file_size_mb, 40, "The size of the file out.h5ad is not greater than 40MB")
